@@ -279,6 +279,10 @@ section.ftt h3 {
     text-align: center;
 }
 
+section.ftt p {
+    color: rgb(79, 76, 76);
+}
+
 section.ftt ul{
     list-style: none;
     justify-content: space-between;
@@ -288,7 +292,7 @@ section.ftt ul li{
 section.ftt ul li a {
     text-decoration: none;
     letter-spacing: 1px;
-    color: rgb(32, 38, 43);
+    color: rgb(73, 75, 77);
     line-height: 22px;
     text-align: left;
 }
@@ -313,14 +317,14 @@ footer p {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-    color: rgb(32, 38, 43);
+    color: rgb(78, 80, 82);
     padding: 15px;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------- Responsive ness  -------------------------------------------------------------- */
 
-@media(max-width: 576px) {
+@media(max-width: 880px) {
 
     /* ------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------navbar section  -------------------------------------------------------------- */
@@ -340,10 +344,13 @@ footer {
     padding: 0;
     width: 100%;
 }
+section.hero .col-md-6{
+    width: 100%;
+    text-align: center;
+}
 section.hero img{
     padding-top: 2.5rem;
 }
-
 
 .buttons .btn{
     display: block;
@@ -366,10 +373,19 @@ section.setup{
 section.about{
     padding: 30px;
 }
+}
 
-section.about .card{
+@media(max-width: 1000px){
+    section.about .col-md-4{
+        margin: 5px;
+        padding: 0;
+    }
+    
+    section.about .row{
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 30px auto;
 }
 }
